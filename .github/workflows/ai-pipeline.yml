@@ -1,0 +1,77 @@
+name: "ToolNest AI Autonomous Research & Publish Pipeline"
+
+on:
+  schedule:
+    # 04:00 UTC = 09:00 AM Pakistan Standard Time (PKT)
+    # 13:00 UTC = 06:00 PM Pakistan Standard Time (PKT)
+    - cron: '0 4,13 * * *'
+  workflow_dispatch:
+    inputs:
+      force_run:
+        description: 'Force immediate research and verification run'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "ai-toolnest-pipeline"
+  cancel-in-progress: false
+
+jobs:
+  research-verify-publish:
+    name: "AI Tool Research, Verification & Auto-Deploy"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout Repository"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: "Set up Python Environment"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: "Display Execution Metadata"
+        run: |
+          echo "=========================================================="
+          echo "Triggered ToolNest AI Autonomous Research Pipeline"
+          echo "Server UTC Time: $(date -u)"
+          echo "Pakistan Time (PKT): $(TZ='Asia/Karachi' date)"
+          echo "=========================================================="
+
+      - name: "Run Autonomous Research & Verification Pipeline"
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python scripts/research_and_publish.py
+
+      - name: "Commit & Push Updated Catalog to main"
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Stage updated catalog and application files
+          git add data/ app.js
+          
+          if git diff --staged --quiet; then
+            echo "No new catalog changes detected during this run."
+          else
+            TIMESTAMP_PKT=$(TZ='Asia/Karachi' date '+%Y-%m-%d %I:%M %p')
+            git commit -m "🤖 [Auto-Publish] Discovered & Verified New AI Tools ($TIMESTAMP_PKT PKT) [skip ci]"
+            git push origin main
+          fi
+
+      - name: "Deploy to gh-pages for Live Web Access"
+        run: |
+          git fetch origin gh-pages:gh-pages || git checkout -b gh-pages
+          git checkout gh-pages
+          git merge main -m "🚀 [Deploy] Sync latest verified tools to gh-pages [skip ci]" --allow-unrelated-histories || git checkout main -- .
+          git commit -am "🚀 [Deploy] Sync latest verified tools to gh-pages [skip ci]" || echo "Clean"
+          git push origin gh-pages
+          git checkout main
