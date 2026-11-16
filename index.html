@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToolNest AI | All Your AI Tools in One Place</title>
+  <meta name="description" content="Discover, explore, and run next-generation AI tools for writing, SEO, coding, research, media, and business in one unified SaaS workspace.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" aria-label="ToolNest AI Home">
+        <div class="logo-icon-wrapper">
+          <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="url(#logo-grad)" />
+            <path d="M16 6L23 11V21L16 26L9 21V11L16 6Z" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" />
+            <circle cx="16" cy="16" r="3.5" fill="#38bdf8" />
+            <path d="M16 6V12.5M23 21L17.5 17.5M9 21L14.5 17.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4f46e5" />
+                <stop offset="0.5" stop-color="#7c3aed" />
+                <stop offset="1" stop-color="#06b6d4" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">ToolNest <span class="logo-highlight">AI</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#popular" class="nav-link">Popular</a>
+        <a href="#tools" class="nav-link">AI Tools</a>
+        <a href="#research" class="nav-link special-nav-link">
+          <span class="pulse-dot"></span>
+          Deep Research
+        </a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav CTA & Mobile Toggle -->
+      <div class="header-actions">
+        <a href="#tools" class="btn btn-sm btn-gradient header-cta">Launch Studio</a>
+        <button type="button" class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileNav">
+          <svg class="menu-open-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg class="menu-close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <div class="mobile-nav-inner">
+        <a href="#popular" class="mobile-nav-link">Popular Tools</a>
+        <a href="#tools" class="mobile-nav-link">Browse Catalog</a>
+        <a href="#research" class="mobile-nav-link">Deep Research Pipeline</a>
+        <a href="#about" class="mobile-nav-link">About Platform</a>
+        <a href="#contact" class="mobile-nav-link">Contact & Support</a>
+        <a href="#tools" class="btn btn-gradient mobile-nav-btn">Start Exploring</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="badge-pill hero-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">Next-Gen Multi-Model Platform • v2.4 Live Demo</span>
+        </div>
+
+        <h1 class="hero-title">
+          All Your AI Tools in <span class="gradient-text">One Place</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Discover, explore and use powerful AI tools. Accelerate your writing, research, SEO, engineering, and visual creation with unified intelligence.
+        </p>
+
+        <!-- Search Bar Hero -->
+        <div class="search-hero-wrapper" role="search">
+          <div class="search-input-box">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" id="toolSearchInput" placeholder="Search 12+ AI tools by keyword, model, or task (e.g. 'summarize', 'prompt', 'SEO', 'code')..." autocomplete="off" aria-label="Search AI tools">
+            <button type="button" class="search-clear-btn" id="searchClearBtn" aria-label="Clear search query" hidden>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+          <button type="button" class="btn btn-gradient search-action-btn" id="searchTriggerBtn">Find Tool</button>
+        </div>
+
+        <!-- Quick filter chips / Trending search tags -->
+        <div class="quick-tags">
+          <span class="quick-tags-label">Trending Now:</span>
+          <button type="button" class="tag-chip" data-query="Research">Deep Research</button>
+          <button type="button" class="tag-chip" data-query="Summarizer">Text Summarizer</button>
+          <button type="button" class="tag-chip" data-query="Prompt">Prompt Enhancer</button>
+          <button type="button" class="tag-chip" data-query="SEO">SEO Generator</button>
+          <button type="button" class="tag-chip" data-query="Code">Code Explainer</button>
+        </div>
+
+        <!-- Platform Highlights Counters -->
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-number">12</span>
+            <span class="metric-label">Curated AI Tools</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-number">4+</span>
+            <span class="metric-label">Interactive Sandboxes</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-number">0ms</span>
+            <span class="metric-label">Client-Side Latency</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-number">100%</span>
+            <span class="metric-label">Free Demo & Local</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Tools Section -->
+    <section class="popular-section" id="popular">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Editor's Pick</div>
+          <h2 class="section-title">Popular Tools</h2>
+          <p class="section-subtitle">Most frequently used intelligent tools trusted by creators, researchers, and developers.</p>
+        </div>
+
+        <div class="popular-grid" id="popularGrid">
+          <!-- Dynamically populated or rendered popular items -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Tools Directory Section -->
+    <section class="tools-section" id="tools">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Tool Catalog</div>
+          <h2 class="section-title">Explore All AI Tools</h2>
+          <p class="section-subtitle">Select a category or click any tool to open its dedicated interactive studio sandbox.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="category-filters-container">
+          <div class="category-filters" role="tablist" aria-label="Tool Categories" id="categoryTabs">
+            <button type="button" class="category-tab active" data-category="all" role="tab" aria-selected="true">
+              <span class="tab-name">All Tools</span>
+              <span class="tab-count" id="count-all">12</span>
+            </button>
+            <button type="button" class="category-tab" data-category="Writing" role="tab" aria-selected="false">
+              <span class="tab-name">Writing</span>
+              <span class="tab-count" id="count-Writing">2</span>
+            </button>
+            <button type="button" class="category-tab" data-category="Image" role="tab" aria-selected="false">
+              <span class="tab-name">Image</span>
+              <span class="tab-count" id="count-Image">1</span>
+            </button>
+            <button type="button" class="category-tab" data-category="Video" role="tab" aria-selected="false">
+              <span class="tab-name">Video</span>
+              <span class="tab-count" id="count-Video">2</span>
+            </button>
+            <button type="button" class="category-tab" data-category="SEO" role="tab" aria-selected="false">
+              <span class="tab-name">SEO</span>
+              <span class="tab-count" id="count-SEO">1</span>
+            </button>
+            <button type="button" class="category-tab" data-category="PDF" role="tab" aria-selected="false">
+              <span class="tab-name">PDF</span>
+              <span class="tab-count" id="count-PDF">1</span>
+            </button>
+            <button type="button" class="category-tab" data-category="Business" role="tab" aria-selected="false">
+              <span class="tab-name">Business</span>
+              <span class="tab-count" id="count-Business">2</span>
+            </button>
+            <button type="button" class="category-tab" data-category="Developer" role="tab" aria-selected="false">
+              <span class="tab-name">Developer</span>
+              <span class="tab-count" id="count-Developer">3</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Filter / Search Meta Indicator -->
+        <div class="results-meta-bar" id="resultsMetaBar">
+          <span class="results-count-text">Showing <strong id="visibleToolsCount">12</strong> tools</span>
+          <span class="demo-mode-indicator">
+            <span class="badge-status-dot"></span>
+            Simulated AI Execution • Demo Mode
+          </span>
+        </div>
+
+        <!-- 12 Tool Cards Grid -->
+        <div class="tools-grid" id="toolsGrid">
+          <!-- Populated by JavaScript with rich icons, descriptions, tags, and click triggers -->
+        </div>
+
+        <!-- No Results Fallback -->
+        <div class="empty-state" id="emptyState" hidden>
+          <div class="empty-icon-box">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
+          <h3>No matching AI tools found</h3>
+          <p>We couldn't find any tool matching your search. Try another query or reset the filter.</p>
+          <button type="button" class="btn btn-secondary" id="resetFiltersBtn">Reset All Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sample AI Research Workflow Section -->
+    <section class="research-section" id="research">
+      <div class="container">
+        <div class="research-card-wrapper">
+          <div class="research-header">
+            <div class="badge-pill research-badge">
+              <span class="badge-spark">✦</span>
+              <span>Autonomous Workflow Feature</span>
+            </div>
+            <h2 class="research-title">AI Deep Research Workflow</h2>
+            <p class="research-subtitle">
+              Simulate an end-to-end multi-agent research pipeline. Watch the agent plan queries, crawl literature, extract empirical data, synthesize arguments, and compile an executive report with verified citations.
+            </p>
+          </div>
+
+          <!-- Step 1: Input Topic Form -->
+          <div class="research-input-panel">
+            <label for="researchTopicInput" class="research-input-label">
+              <span>Step 1: Enter Your Research Topic</span>
+              <span class="label-hint">Choose a suggested topic or enter your custom domain inquiry</span>
+            </label>
+            <div class="research-input-row">
+              <div class="research-input-field">
+                <svg class="topic-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <input type="text" id="researchTopicInput" value="Autonomous AI Agents in Enterprise Software (2026-2030)" placeholder="e.g. Solid-State Batteries Commercialization Timeline..." aria-label="Research topic input">
+              </div>
+              <button type="button" class="btn btn-gradient btn-lg research-start-btn" id="startResearchBtn">
+                <span class="btn-text">Start Research</span>
+                <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+
+            <!-- Quick Preset Topics -->
+            <div class="preset-topics">
+              <span class="preset-label">Suggested Topics:</span>
+              <button type="button" class="preset-topic-btn active" data-topic="Autonomous AI Agents in Enterprise Software (2026-2030)">Enterprise Autonomous AI</button>
+              <button type="button" class="preset-topic-btn" data-topic="Next-Gen Solid State Battery Chemistry & EV Range">Solid-State EV Batteries</button>
+              <button type="button" class="preset-topic-btn" data-topic="Post-Quantum Cryptography & Zero-Knowledge Proofs">Post-Quantum Cryptography</button>
+              <button type="button" class="preset-topic-btn" data-topic="AI-Driven Molecular Folding in Oncology Drug Discovery">AI Oncology Drug Discovery</button>
+            </div>
+          </div>
+
+          <!-- Step 2 & 3: Execution Progress & Pipeline Steps -->
+          <div class="research-pipeline-panel" id="researchPipelinePanel" hidden>
+            <div class="pipeline-status-header">
+              <div class="pipeline-topic-display">
+                <span class="status-prefix">Active Research Stream:</span>
+                <strong id="activeTopicText">Autonomous AI Agents in Enterprise Software</strong>
+              </div>
+              <div class="pipeline-progress-meta">
+                <span class="progress-percent" id="pipelinePercent">0%</span>
+                <span class="progress-status-badge" id="pipelineStatusBadge">Initializing Engine</span>
+              </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="pipeline-progress-bar-bg" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+              <div class="pipeline-progress-bar-fill" id="pipelineProgressBar"></div>
+            </div>
+
+            <!-- Step Cards in Sequence -->
+            <div class="pipeline-steps-grid">
+              <!-- Step 1 -->
+              <div class="step-card" id="stepCard-1">
+                <div class="step-icon-col">
+                  <div class="step-badge-number">1</div>
+                  <div class="step-connector"></div>
+                </div>
+                <div class="step-body">
+                  <div class="step-header-row">
+                    <h4 class="step-name">Query Planning & Source Crawling</h4>
+                    <span class="step-status-tag" id="stepTag-1">Queued</span>
+                  </div>
+                  <p class="step-description">Formulating boolean search vectors and crawling IEEE, Gartner, arXiv, and industry disclosures.</p>
+                  <div class="step-live-logs" id="stepLogs-1" hidden>
+                    <code>Connecting to academic crawler... 14 citations indexed.</code>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="step-card" id="stepCard-2">
+                <div class="step-icon-col">
+                  <div class="step-badge-number">2</div>
+                  <div class="step-connector"></div>
+                </div>
+                <div class="step-body">
+                  <div class="step-header-row">
+                    <h4 class="step-name">Data Extraction & Verification</h4>
+                    <span class="step-status-tag" id="stepTag-2">Queued</span>
+                  </div>
+                  <p class="step-description">Extracting empirical metrics, CAGR benchmarks, architecture schemas, and deduplicating insights.</p>
+                  <div class="step-live-logs" id="stepLogs-2" hidden>
+                    <code>Parsing quantitative tables... 8 benchmarks cross-referenced.</code>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="step-card" id="stepCard-3">
+                <div class="step-icon-col">
+                  <div class="step-badge-number">3</div>
+                  <div class="step-connector"></div>
+                </div>
+                <div class="step-body">
+                  <div class="step-header-row">
+                    <h4 class="step-name">Synthesis & Argument Modeling</h4>
+                    <span class="step-status-tag" id="stepTag-3">Queued</span>
+                  </div>
+                  <p class="step-description">Synthesizing strategic advantages, adoption hurdles, regulatory standards, and market projections.</p>
+                  <div class="step-live-logs" id="stepLogs-3" hidden>
+                    <code>Synthesizing multi-model consensus and SWOT dimensions...</code>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="step-card" id="stepCard-4">
+                <div class="step-icon-col">
+                  <div class="step-badge-number">4</div>
+                </div>
+                <div class="step-body">
+                  <div class="step-header-row">
+                    <h4 class="step-name">Report Compilation & Citation Index</h4>
+                    <span class="step-status-tag" id="stepTag-4">Queued</span>
+                  </div>
+                  <p class="step-description">Generating structured executive dossier with full bibliography, key takeaways, and metric matrices.</p>
+                  <div class="step-live-logs" id="stepLogs-4" hidden>
+                    <code>Finalizing Markdown formatting and source URL indexing...</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- Step 4: Final Research Report Display -->
+          <div class="research-report-panel" id="researchReportPanel" hidden>
+            <div class="report-top-bar">
+              <div class="report-tag-group">
+                <span class="badge-pill success-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Research Synthesized
+                </span>
+                <span class="report-meta-timestamp" id="reportGeneratedTime">Generated just now</span>
+                <span class="report-simulation-flag">Simulated Output</span>
+              </div>
+              <div class="report-action-buttons">
+                <button type="button" class="btn btn-sm btn-secondary" id="copyReportBtn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  Copy Report
+                </button>
+                <button type="button" class="btn btn-sm btn-gradient" id="rerunResearchBtn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                  New Topic
+                </button>
+              </div>
+            </div>
+
+            <!-- The Rendered Report Content -->
+            <div class="report-body" id="reportBodyContent">
+              <!-- Dynamically populated report according to selected topic -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Platform Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <div class="section-tag">About ToolNest AI</div>
+            <h2 class="section-title">The Unified Operating System for Intelligent Work</h2>
+            <p class="about-description">
+              ToolNest AI was engineered to eliminate fragmentation in the modern AI ecosystem. Instead of juggling dozens of disconnected subscriptions, tabs, and fragmented interfaces, ToolNest AI aggregates best-in-class generative models, deterministic utilities, and autonomous research workflows into one cohesive, lightning-fast platform.
+            </p>
+
+            <div class="about-features-list">
+              <div class="about-feature-item">
+                <div class="feature-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div>
+                  <h4>Zero Friction Sandbox</h4>
+                  <p>Instant, client-side demonstrations without cumbersome logins, paywalls, or token management.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="feature-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <div>
+                  <h4>Unified Multi-Domain Engine</h4>
+                  <p>Seamlessly pivot between code debugging, prompt synthesis, SEO metadata, and deep academic synthesis.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="feature-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <h4>Transparent Demo Pipelines</h4>
+                  <p>Clear labeling between functional sandbox tools, simulated deep workflows, and coming soon modules.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Interactive Graphic / Stats Box -->
+          <div class="about-visual">
+            <div class="glass-stat-card">
+              <div class="stat-card-header">
+                <div class="browser-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="stat-window-title">toolnest-core-engine.json</span>
+              </div>
+              <div class="stat-code-preview">
+                <pre><code>{
+  <span class="code-key">"platform"</span>: <span class="code-str">"ToolNest AI"</span>,
+  <span class="code-key">"release"</span>: <span class="code-str">"2026.4 Enterprise"</span>,
+  <span class="code-key">"architecture"</span>: <span class="code-str">"Unified Multi-Agent"</span>,
+  <span class="code-key">"categories"</span>: [
+    <span class="code-str">"Writing"</span>, <span class="code-str">"SEO"</span>, <span class="code-str">"Developer"</span>,
+    <span class="code-str">"Image"</span>, <span class="code-str">"Video"</span>, <span class="code-str">"Business"</span>, <span class="code-str">"PDF"</span>
+  ],
+  <span class="code-key">"security"</span>: <span class="code-str">"Client-Isolated Sandbox"</span>,
+  <span class="code-key">"pipelineLatency"</span>: <span class="code-str">"Sub-second"</span>,
+  <span class="code-key">"status"</span>: <span class="code-str">"Operational (99.99%)"</span>
+}</code></pre>
+              </div>
+              <div class="stat-badge-row">
+                <div class="stat-mini-pill">
+                  <span class="mini-val">7</span> Categories
+                </div>
+                <div class="stat-mini-pill">
+                  <span class="mini-val">12</span> Core Tools
+                </div>
+                <div class="stat-mini-pill highlight">
+                  <span class="mini-val">4</span> Live Sandboxes
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header">
+          <div class="section-tag">Common Inquiries</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about ToolNest AI demo and capabilities.</p>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>What is ToolNest AI?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>ToolNest AI is an all-in-one AI platform showcase. It provides a modern SaaS interface aggregating tools across writing, SEO optimization, developer utilities, multi-stage deep research, and multimedia workflows into a single workspace.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Which tools are fully functional right now?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>You can immediately interact with 4 functional tools: <strong>AI Text Summarizer & Rephraser</strong>, <strong>AI Prompt Enhancer</strong>, <strong>AI SEO Meta & Keyword Generator</strong>, and <strong>AI Code Explainer & Optimizer</strong>, plus the interactive <strong>4-Stage Deep Research Workflow</strong>. Other tools offer rich interactive preview sandboxes.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Are the deep research reports simulated?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. In this demo release, the deep research pipeline simulates multi-agent crawling and synthesis with high-fidelity datasets, realistic progression steps, and verified source citations without incurring external API costs or server dependencies.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Does this require an account or credit card?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>No! The demo is entirely free, client-side, privacy-first, and requires no API keys, accounts, or payments.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Feedback Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <div class="section-tag">Get in Touch</div>
+            <h2 class="section-title">Connect with ToolNest AI</h2>
+            <p class="section-subtitle">Have questions about integrations, enterprise pilots, or want to suggest a new AI tool? Send us a message.</p>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" name="name" placeholder="Sarah Connor" required>
+                <span class="field-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Work Email</label>
+                <input type="email" id="contactEmail" name="email" placeholder="sarah@enterprise.ai" required>
+                <span class="field-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Inquiry Category</label>
+              <select id="contactSubject" name="subject" class="form-select">
+                <option value="General Feedback">General Feedback & Demo Questions</option>
+                <option value="Enterprise Integration">Enterprise Platform Integration</option>
+                <option value="Tool Submission">Suggest a New AI Tool</option>
+                <option value="Partnership">API & Model Partnership</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="4" placeholder="Tell us about your team's workflow and what AI capabilities you'd like to see..." required></textarea>
+              <span class="field-error" id="messageError"></span>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-gradient btn-lg" id="contactSubmitBtn">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </div>
+
+            <div class="form-status-alert" id="formStatusAlert" hidden>
+              <!-- Populated upon submission -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top-row">
+        <div class="footer-brand-col">
+          <a href="#" class="brand-logo footer-logo">
+            <div class="logo-icon-wrapper small">
+              <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="url(#logo-grad-f)" />
+                <path d="M16 6L23 11V21L16 26L9 21V11L16 6Z" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" />
+                <circle cx="16" cy="16" r="3.5" fill="#38bdf8" />
+                <defs>
+                  <linearGradient id="logo-grad-f" x1="0" y1="0" x2="32" y2="32">
+                    <stop stop-color="#4f46e5" />
+                    <stop offset="1" stop-color="#06b6d4" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="logo-text">ToolNest <span class="logo-highlight">AI</span></span>
+          </a>
+          <p class="footer-tagline">
+            All-in-one AI ecosystem uniting intelligence, creative media, SEO analysis, and deep research pipelines.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h5 class="footer-heading">Platform</h5>
+          <ul>
+            <li><a href="#popular">Popular Tools</a></li>
+            <li><a href="#tools">All 12 Tools</a></li>
+            <li><a href="#research">Deep Research Pipeline</a></li>
+            <li><a href="#about">Architecture</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h5 class="footer-heading">Categories</h5>
+          <ul>
+            <li><a href="#tools" class="footer-cat-link" data-cat="Writing">Writing & Copy</a></li>
+            <li><a href="#tools" class="footer-cat-link" data-cat="Developer">Developer Tools</a></li>
+            <li><a href="#tools" class="footer-cat-link" data-cat="SEO">SEO Optimization</a></li>
+            <li><a href="#tools" class="footer-cat-link" data-cat="Business">Business Intelligence</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h5 class="footer-heading">Demo Notice</h5>
+          <p class="footer-notice-text">
+            ToolNest AI is a showcase demonstration. All AI model outputs are generated locally or synthesized via sample benchmark engines.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; 2026 ToolNest AI Platform Inc. All rights reserved.</p>
+        <div class="footer-bottom-badges">
+          <span class="pill-mini">Client-Side Secure</span>
+          <span class="pill-mini">Zero External Tracking</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================== -->
+  <!-- NATIVE HTML5 MODAL DIALOGS (Compliant with Modern Web Guidance) -->
+  <!-- ======================================================== -->
+
+  <!-- 1. MODAL: AI Text Summarizer & Rephraser (Functional) -->
+  <dialog id="modal-summarizer" class="tool-modal" aria-labelledby="modal-summarizer-title">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="tool-badge-icon icon-writing">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div>
+            <h3 id="modal-summarizer-title" class="modal-title">AI Text Summarizer & Rephraser</h3>
+            <span class="modal-badge active">Functional Tool</span>
+          </div>
+        </div>
+        <form method="dialog">
+          <button type="submit" class="modal-close-btn" aria-label="Close dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-intro">Condense lengthy articles, executive memos, or drafts into crisp summaries, executive bullets, or rephrased tones in real time.</p>
+
+        <!-- Presets bar -->
+        <div class="modal-presets-bar">
+          <span class="preset-label-sm">Sample Inputs:</span>
+          <button type="button" class="btn-preset-pill" data-target="summarizer" data-sample="tech">Tech Article</button>
+          <button type="button" class="btn-preset-pill" data-target="summarizer" data-sample="business">Quarterly Earnings Memo</button>
+          <button type="button" class="btn-preset-pill" data-target="summarizer" data-sample="ai">AI Agent Whitepaper</button>
+        </div>
+
+        <div class="tool-workspace-split">
+          <!-- Left: Input & Controls -->
+          <div class="workspace-col">
+            <div class="workspace-col-header">
+              <label for="summarizerInput">Original Text</label>
+              <span class="word-counter" id="summarizerWordCount">0 words • 0 chars</span>
+            </div>
+            <textarea id="summarizerInput" class="tool-textarea" rows="8" placeholder="Paste your text here or click a sample input above..."></textarea>
+
+            <div class="tool-controls-row">
+              <div class="control-item">
+                <label for="summarizerMode">Summary Format</label>
+                <select id="summarizerMode" class="form-select-sm">
+                  <option value="bullet">Key Bullet Points (3-5 points)</option>
+                  <option value="executive">Executive Paragraph</option>
+                  <option value="eli5">ELI5 (Explain Like I'm 5)</option>
+                  <option value="tldr">One-Sentence TL;DR</option>
+                </select>
+              </div>
+              <div class="control-item">
+                <label for="summarizerTone">Tone Shift</label>
+                <select id="summarizerTone" class="form-select-sm">
+                  <option value="professional">Professional & Crisp</option>
+                  <option value="persuasive">Persuasive / Pitch</option>
+                  <option value="casual">Friendly & Conversational</option>
+                  <option value="academic">Academic & Formal</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-gradient btn-full" id="runSummarizerBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Process Summary & Rephrase
+            </button>
+          </div>
+
+          <!-- Right: Output -->
+          <div class="workspace-col">
+            <div class="workspace-col-header">
+              <span>Synthesized Result</span>
+              <div class="output-actions">
+                <span class="reduction-badge" id="summarizerReductionBadge" hidden>65% Shorter</span>
+                <button type="button" class="btn-copy-sm" id="copySummarizerBtn" aria-label="Copy summary output" disabled>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  Copy
+                </button>
+              </div>
+            </div>
+            <div class="tool-output-box" id="summarizerOutput">
+              <div class="placeholder-state">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <p>Click "Process Summary & Rephrase" or pick a sample input to generate your result.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 2. MODAL: AI Prompt Enhancer (Functional) -->
+  <dialog id="modal-prompt" class="tool-modal" aria-labelledby="modal-prompt-title">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="tool-badge-icon icon-dev">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div>
+            <h3 id="modal-prompt-title" class="modal-title">AI Smart Prompt Enhancer</h3>
+            <span class="modal-badge active">Functional Tool</span>
+          </div>
+        </div>
+        <form method="dialog">
+          <button type="submit" class="modal-close-btn" aria-label="Close dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-intro">Turn raw, vague instructions into battle-tested, structured prompts using industry-standard prompt engineering frameworks (Context, Role, Few-Shot, Output Schema).</p>
+
+        <div class="modal-presets-bar">
+          <span class="preset-label-sm">Sample Prompts:</span>
+          <button type="button" class="btn-preset-pill" data-target="prompt" data-sample="email">Sales Outreach Email</button>
+          <button type="button" class="btn-preset-pill" data-target="prompt" data-sample="code">React Component Refactor</button>
+          <button type="button" class="btn-preset-pill" data-target="prompt" data-sample="strategy">Go-to-Market Strategy</button>
+        </div>
+
+        <div class="tool-workspace-split">
+          <div class="workspace-col">
+            <div class="workspace-col-header">
+              <label for="promptInput">Basic Prompt</label>
+              <span class="hint-tag">Input simple idea</span>
+            </div>
+            <textarea id="promptInput" class="tool-textarea" rows="6" placeholder="e.g. Write a marketing email to SaaS founders about our new AI analytics feature..."></textarea>
+
+            <div class="tool-controls-row">
+              <div class="control-item">
+                <label for="promptTargetModel">Target Model Architecture</label>
+                <select id="promptTargetModel" class="form-select-sm">
+                  <option value="gemini">Gemini 1.5/2.0 / Multimodal</option>
+                  <option value="claude">Claude 3.5 Sonnet / XML Format</option>
+                  <option value="gpt4">GPT-4o / Structured Reasoning</option>
+                </select>
+              </div>
+              <div class="control-item">
+                <label for="promptFramework">Engineering Framework</label>
+                <select id="promptFramework" class="form-select-sm">
+                  <option value="rcaf">RCAF (Role, Context, Action, Format)</option>
+                  <option value="cot">Chain-of-Thought (Step-by-Step)</option>
+                  <option value="strict">Strict Constraint & Guardrails</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-gradient btn-full" id="runPromptBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              Enhance Prompt
+            </button>
+          </div>
+
+          <div class="workspace-col">
+            <div class="workspace-col-header">
+              <span>Optimized Production Prompt</span>
+              <button type="button" class="btn-copy-sm" id="copyPromptBtn" aria-label="Copy prompt output" disabled>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy Prompt
+              </button>
+            </div>
+            <div class="tool-output-box code-style" id="promptOutput">
+              <div class="placeholder-state">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <p>Enter your basic prompt and click "Enhance Prompt" to generate an engineered prompt template.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 3. MODAL: AI SEO Meta & Keyword Architect (Functional) -->
+  <dialog id="modal-seo" class="tool-modal" aria-labelledby="modal-seo-title">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="tool-badge-icon icon-seo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div>
+            <h3 id="modal-seo-title" class="modal-title">AI SEO Meta & Keyword Architect</h3>
+            <span class="modal-badge active">Functional Tool</span>
+          </div>
+        </div>
+        <form method="dialog">
+          <button type="submit" class="modal-close-btn" aria-label="Close dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-intro">Generate high-CTR SEO title tags, meta descriptions with character length meters, Google SERP preview, and target keyword clusters.</p>
+
+        <div class="modal-presets-bar">
+          <span class="preset-label-sm">Sample Topics:</span>
+          <button type="button" class="btn-preset-pill" data-target="seo" data-sample="saas">SaaS Analytics Platform</button>
+          <button type="button" class="btn-preset-pill" data-target="seo" data-sample="coffee">Direct-to-Consumer Coffee</button>
+          <button type="button" class="btn-preset-pill" data-target="seo" data-sample="cyber">Cloud Security Compliance</button>
+        </div>
+
+        <div class="tool-workspace-split">
+          <div class="workspace-col">
+            <div class="form-group mb-3">
+              <label for="seoTopicInput">Page Topic or Brand</label>
+              <input type="text" id="seoTopicInput" class="form-input" placeholder="e.g. Next-generation AI meeting recorder & transcription software">
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="seoTargetAudience">Target Audience / Primary Intent</label>
+              <select id="seoTargetAudience" class="form-select-sm">
+                <option value="b2b">B2B Decision Makers (High Purchase Intent)</option>
+                <option value="dev">Software Engineers & Tech Leads</option>
+                <option value="creator">Content Creators & Marketers</option>
+                <option value="general">Broad Consumer / Educational</option>
+              </select>
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="seoBrandName">Brand Name (Optional)</label>
+              <input type="text" id="seoBrandName" class="form-input" value="ToolNest AI" placeholder="e.g. ToolNest AI">
+            </div>
+
+            <button type="button" class="btn btn-gradient btn-full" id="runSeoBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              Generate SEO Metadata & SERP
+            </button>
+          </div>
+
+          <div class="workspace-col">
+            <div class="workspace-col-header">
+              <span>Google SERP Preview</span>
+              <button type="button" class="btn-copy-sm" id="copySeoBtn" aria-label="Copy SEO metadata" disabled>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy Meta Tags
+              </button>
+            </div>
+
+            <div class="tool-output-box" id="seoOutput">
+              <div class="placeholder-state">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                <p>Provide your topic and click "Generate SEO Metadata" to preview your Google search card and keyword matrix.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 4. MODAL: AI Code Explainer & Bug Reviewer (Functional Bonus) -->
+  <dialog id="modal-code" class="tool-modal" aria-labelledby="modal-code-title">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="tool-badge-icon icon-dev">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div>
+            <h3 id="modal-code-title" class="modal-title">AI Code Explainer & Reviewer</h3>
+            <span class="modal-badge active">Functional Tool</span>
+          </div>
+        </div>
+        <form method="dialog">
+          <button type="submit" class="modal-close-btn" aria-label="Close dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-intro">Paste any snippet to break down algorithm logic, compute Big-O complexity, detect edge cases, and inspect clean refactored alternatives.</p>
+
+        <div class="modal-presets-bar">
+          <span class="preset-label-sm">Sample Snippets:</span>
+          <button type="button" class="btn-preset-pill" data-target="code" data-sample="fibonacci">Memoized Recursion</button>
+          <button type="button" class="btn-preset-pill" data-target="code" data-sample="debounce">Custom JS Debounce</button>
+          <button type="button" class="btn-preset-pill" data-target="code" data-sample="sql">SQL Window Function</button>
+        </div>
+
+        <div class="tool-workspace-split">
+          <div class="workspace-col">
+            <div class="workspace-col-header">
+              <label for="codeInput">Source Code</label>
+              <select id="codeLanguageSelect" class="form-select-sm" style="width: auto;">
+                <option value="javascript">JavaScript / TypeScript</option>
+                <option value="python">Python</option>
+                <option value="sql">SQL</option>
+              </select>
+            </div>
+            <textarea id="codeInput" class="tool-textarea code-font" rows="8" placeholder="// Paste your code here..."></textarea>
+
+            <button type="button" class="btn btn-gradient btn-full mt-3" id="runCodeBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Analyze & Explain Code
+            </button>
+          </div>
+
+          <div class="workspace-col">
+            <div class="workspace-col-header">
+              <span>Code Audit & Explanation</span>
+              <button type="button" class="btn-copy-sm" id="copyCodeBtn" aria-label="Copy code explanation" disabled>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy Audit
+              </button>
+            </div>
+            <div class="tool-output-box" id="codeOutput">
+              <div class="placeholder-state">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <p>Select a sample snippet or paste your code to run instant algorithmic analysis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 5. GENERIC PREVIEW MODAL FOR OTHER TOOLS (Attractive Demo Interfaces with Coming Soon tags) -->
+  <dialog id="modal-preview" class="tool-modal" aria-labelledby="modal-preview-title">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="tool-badge-icon" id="previewIconBox">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <div>
+            <h3 id="modal-preview-title" class="modal-title">Tool Preview</h3>
+            <span class="modal-badge coming-soon" id="previewBadge">Coming Soon</span>
+          </div>
+        </div>
+        <form method="dialog">
+          <button type="submit" class="modal-close-btn" aria-label="Close dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="modal-body" id="previewModalBody">
+        <!-- Dynamically injected specialized demo UI for the clicked tool -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
