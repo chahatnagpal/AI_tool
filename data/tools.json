@@ -1,9 +1,9 @@
 {
   "version": "2.4.0",
-  "lastUpdated": "2026-11-16T16:55:00+05:00",
+  "lastUpdated": "2026-11-17T03:36:38.594083+05:00",
   "timezone": "Asia/Karachi (PKT)",
   "schedule": "09:00 PKT & 18:00 PKT Daily",
-  "totalTools": 12,
+  "totalTools": 13,
   "tools": [
     {
       "id": "summarizer",
@@ -15,7 +15,11 @@
       "status": "functional",
       "statusLabel": "Active Tool",
       "popular": true,
-      "features": ["4 Output Modes", "Real-time Metrics", "Tone Transformation"],
+      "features": [
+        "4 Output Modes",
+        "Real-time Metrics",
+        "Tone Transformation"
+      ],
       "modalId": "modal-summarizer"
     },
     {
@@ -28,7 +32,11 @@
       "status": "functional",
       "statusLabel": "Active Tool",
       "popular": true,
-      "features": ["RCAF Framework", "Multi-Model Rules", "XML Guardrails"],
+      "features": [
+        "RCAF Framework",
+        "Multi-Model Rules",
+        "XML Guardrails"
+      ],
       "modalId": "modal-prompt"
     },
     {
@@ -41,7 +49,11 @@
       "status": "functional",
       "statusLabel": "Active Tool",
       "popular": true,
-      "features": ["Google SERP Card", "Character Counters", "Keyword Matrix"],
+      "features": [
+        "Google SERP Card",
+        "Character Counters",
+        "Keyword Matrix"
+      ],
       "modalId": "modal-seo"
     },
     {
@@ -54,7 +66,11 @@
       "status": "workflow",
       "statusLabel": "Featured Workflow",
       "popular": true,
-      "features": ["4-Stage Pipeline", "Academic Citations", "Executive Dossier"],
+      "features": [
+        "4-Stage Pipeline",
+        "Academic Citations",
+        "Executive Dossier"
+      ],
       "modalId": "research-section"
     },
     {
@@ -67,7 +83,11 @@
       "status": "functional",
       "statusLabel": "Active Tool",
       "popular": false,
-      "features": ["Big-O Complexity", "Edge Case Detection", "Clean Refactors"],
+      "features": [
+        "Big-O Complexity",
+        "Edge Case Detection",
+        "Clean Refactors"
+      ],
       "modalId": "modal-code"
     },
     {
@@ -80,7 +100,11 @@
       "status": "coming-soon",
       "statusLabel": "Coming Soon",
       "popular": false,
-      "features": ["Aspect Ratios", "Lighting Presets", "Composition Seeds"],
+      "features": [
+        "Aspect Ratios",
+        "Lighting Presets",
+        "Composition Seeds"
+      ],
       "modalId": "modal-preview"
     },
     {
@@ -93,7 +117,11 @@
       "status": "coming-soon",
       "statusLabel": "Coming Soon",
       "popular": false,
-      "features": ["Scene Breakdowns", "Camera Direction", "Audio Cues"],
+      "features": [
+        "Scene Breakdowns",
+        "Camera Direction",
+        "Audio Cues"
+      ],
       "modalId": "modal-preview"
     },
     {
@@ -106,7 +134,11 @@
       "status": "coming-soon",
       "statusLabel": "Coming Soon",
       "popular": false,
-      "features": ["Table Extraction", "Page Citations", "Contract Auditing"],
+      "features": [
+        "Table Extraction",
+        "Page Citations",
+        "Contract Auditing"
+      ],
       "modalId": "modal-preview"
     },
     {
@@ -119,7 +151,11 @@
       "status": "coming-soon",
       "statusLabel": "Coming Soon",
       "popular": false,
-      "features": ["10-Slide Outline", "TAM Calculator", "Moat Articulation"],
+      "features": [
+        "10-Slide Outline",
+        "TAM Calculator",
+        "Moat Articulation"
+      ],
       "modalId": "modal-preview"
     },
     {
@@ -132,7 +168,11 @@
       "status": "coming-soon",
       "statusLabel": "Coming Soon",
       "popular": false,
-      "features": ["Voice Clones", "Cadence Control", "Waveform Preview"],
+      "features": [
+        "Voice Clones",
+        "Cadence Control",
+        "Waveform Preview"
+      ],
       "modalId": "modal-preview"
     },
     {
@@ -145,7 +185,11 @@
       "status": "coming-soon",
       "statusLabel": "Coming Soon",
       "popular": false,
-      "features": ["Natural Language SQL", "Query Optimization", "Schema Indexes"],
+      "features": [
+        "Natural Language SQL",
+        "Query Optimization",
+        "Schema Indexes"
+      ],
       "modalId": "modal-preview"
     },
     {
@@ -158,8 +202,30 @@
       "status": "coming-soon",
       "statusLabel": "Coming Soon",
       "popular": false,
-      "features": ["Cultural Adaptation", "Brand Tone Lock", "Idiom Mapping"],
+      "features": [
+        "Cultural Adaptation",
+        "Brand Tone Lock",
+        "Idiom Mapping"
+      ],
       "modalId": "modal-preview"
+    },
+    {
+      "id": "regex-architect",
+      "name": "AI Regex & Pattern Architect",
+      "category": "Developer",
+      "iconClass": "icon-dev",
+      "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 7V4h16v3M9 20h6M12 4v16\"/></svg>",
+      "desc": "Translate complex string matching intent into zero-backtracking regular expressions with automated test cases.",
+      "status": "coming-soon",
+      "statusLabel": "New Discovery",
+      "popular": false,
+      "features": [
+        "Zero-Backtracking",
+        "Test Suite Generator",
+        "Regex Explainer"
+      ],
+      "modalId": "modal-preview",
+      "discoveredAt": "2026-11-17 03:36 AM PKT"
     }
   ]
 }
