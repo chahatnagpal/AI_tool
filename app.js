@@ -246,6 +246,24 @@ const TOOLS_DATA = [
     ],
     "modalId": "modal-preview",
     "discoveredAt": "2026-11-17 05:35 PM PKT"
+  },
+  {
+    "id": "api-contract-validator",
+    "name": "AI OpenAPI & Contract Validator",
+    "category": "Developer",
+    "iconClass": "icon-dev",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\"/><line x1=\"8\" y1=\"21\" x2=\"16\" y2=\"21\"/><line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"21\"/></svg>",
+    "desc": "Audit REST, GraphQL, and gRPC endpoint contracts for breaking backward-compatibility and security vulnerabilities.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "Breaking Change Check",
+      "Schema Drift Audit",
+      "Mock Server"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-18 02:25 AM PKT"
   }
 ];
 
