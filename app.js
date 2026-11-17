@@ -228,6 +228,24 @@ const TOOLS_DATA = [
     ],
     "modalId": "modal-preview",
     "discoveredAt": "2026-11-17 03:36 AM PKT"
+  },
+  {
+    "id": "git-synthesizer",
+    "name": "AI Git Commit & Changelog Synthesizer",
+    "category": "Developer",
+    "iconClass": "icon-dev",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"18\" cy=\"18\" r=\"3\"/><circle cx=\"6\" cy=\"6\" r=\"3\"/><path d=\"M13 6h3a2 2 0 0 1 2 2v7M6 9v12\"/></svg>",
+    "desc": "Inspect staged git diffs to generate semantic Conventional Commits, breaking change notes, and release summaries.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "Conventional Commits",
+      "Diff Breakdown",
+      "Release Notes"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-17 05:35 PM PKT"
   }
 ];
 
