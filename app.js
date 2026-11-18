@@ -264,6 +264,24 @@ const TOOLS_DATA = [
     ],
     "modalId": "modal-preview",
     "discoveredAt": "2026-11-18 02:25 AM PKT"
+  },
+  {
+    "id": "voice-transcriber-wasm",
+    "name": "AI Client-Side Voice Transcriber",
+    "category": "Video",
+    "iconClass": "icon-video",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z\"/><path d=\"M19 10v2a7 7 0 0 1-14 0v-2\"/></svg>",
+    "desc": "Zero-server, 100% in-browser WebAssembly audio transcription and speaker separation with local privacy.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "100% Client-Side",
+      "Multi-Speaker Diarization",
+      "SRT/VTT Export"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-18 05:23 PM PKT"
   }
 ];
 
