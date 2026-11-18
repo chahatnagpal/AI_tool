@@ -282,6 +282,24 @@ const TOOLS_DATA = [
     ],
     "modalId": "modal-preview",
     "discoveredAt": "2026-11-18 05:23 PM PKT"
+  },
+  {
+    "id": "svg-vector-optimizer",
+    "name": "AI SVG Vectorizer & Path Optimizer",
+    "category": "Image",
+    "iconClass": "icon-image",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polygon points=\"12 2 2 7 12 12 22 7 12 2\"/><polyline points=\"2 17 12 22 22 17\"/><polyline points=\"2 12 12 17 22 12\"/></svg>",
+    "desc": "Convert raster logos and UI sketches into production-ready SVGs with reduced Bezier control points and minified code.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "Bezier Simplification",
+      "Asset Minifier",
+      "React/JSX Component"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-19 01:56 AM PKT"
   }
 ];
 
