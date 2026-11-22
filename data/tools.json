@@ -1,9 +1,9 @@
 {
   "version": "2.4.0",
-  "lastUpdated": "2026-11-22T17:05:11.595075+05:00",
+  "lastUpdated": "2026-11-23T01:01:17.694126+05:00",
   "timezone": "Asia/Karachi (PKT)",
   "schedule": "09:00 PKT & 18:00 PKT Daily",
-  "totalTools": 22,
+  "totalTools": 24,
   "tools": [
     {
       "id": "summarizer",
@@ -388,6 +388,42 @@
       ],
       "modalId": "modal-preview",
       "discoveredAt": "2026-11-22 05:05 PM PKT"
+    },
+    {
+      "id": "commit-message-generator",
+      "name": "Commit Message Generator",
+      "category": "Developer",
+      "iconClass": "icon-git",
+      "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2v20M2 12h20\"/></svg>",
+      "desc": "Analyzes staged git diffs to automatically generate semantic, conventional commit messages that adhere to project standards.",
+      "status": "coming-soon",
+      "statusLabel": "New Discovery",
+      "popular": false,
+      "features": [
+        "Conventional Commits support",
+        "Diff context analysis",
+        "Auto-tagging"
+      ],
+      "modalId": "modal-preview",
+      "discoveredAt": "2026-11-23 01:01 AM PKT"
+    },
+    {
+      "id": "ai-content-repurposer",
+      "name": "Content Repurposer",
+      "category": "Business",
+      "iconClass": "icon-business",
+      "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8\"/><polyline points=\"16 6 12 2 8 6\"/><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"15\"/></svg>",
+      "desc": "Transforms long-form blog posts or documents into optimized social media threads, newsletters, and short-form video scripts.",
+      "status": "coming-soon",
+      "statusLabel": "New Discovery",
+      "popular": false,
+      "features": [
+        "Multi-platform formatting",
+        "Tone adjustment",
+        "Key insight extraction"
+      ],
+      "modalId": "modal-preview",
+      "discoveredAt": "2026-11-23 01:01 AM PKT"
     }
   ]
 }
