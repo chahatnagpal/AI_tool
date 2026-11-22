@@ -318,6 +318,42 @@ const TOOLS_DATA = [
     ],
     "modalId": "modal-preview",
     "discoveredAt": "2026-11-22 04:32 PM PKT"
+  },
+  {
+    "id": "ui-component-generator",
+    "name": "UI Component Generator",
+    "category": "Developer",
+    "iconClass": "icon-code",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M16 18l6-6-6-6M8 6l-6 6 6 6\"/></svg>",
+    "desc": "Instantly generates production-ready React or Vue components from natural language descriptions, complete with Tailwind CSS styling and accessibility best practices.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "Tailwind CSS integration",
+      "TypeScript support",
+      "Accessibility audit"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-22 04:44 PM PKT"
+  },
+  {
+    "id": "brand-voice-auditor",
+    "name": "Brand Voice Auditor",
+    "category": "Writing",
+    "iconClass": "icon-pen",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2v20M2 12h20\"/></svg>",
+    "desc": "Analyzes your long-form content against a defined brand persona to ensure consistent tone, vocabulary, and sentiment across all marketing channels.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "Tone consistency scoring",
+      "Vocabulary style matching",
+      "Sentiment drift detection"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-22 04:44 PM PKT"
   }
 ];
 
