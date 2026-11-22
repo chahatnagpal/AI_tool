@@ -18,7 +18,15 @@ PKT_TIMEZONE = timezone(PKT_OFFSET, name="PKT")
 
 ALLOWED_CATEGORIES = ["Writing", "Developer", "SEO", "Business", "Image", "Video", "PDF"]
 
-# Curated fallback queue of verified cutting-edge utility & AI tools
+# Candidate models in priority order
+GEMINI_MODELS = [
+    "gemini-3.5-flash",
+    "gemma-4-26b-a4b-it",
+    "gemini-3.1-flash-lite",
+    "gemini-flash-latest"
+]
+
+# Rich reserve queue of verified cutting-edge utility & AI tools
 CURATED_RESERVE_TOOLS = [
     {
         "id": "regex-architect",
@@ -84,6 +92,98 @@ CURATED_RESERVE_TOOLS = [
         "popular": False,
         "features": ["Bezier Simplification", "Asset Minifier", "React/JSX Component"],
         "modalId": "modal-preview"
+    },
+    {
+        "id": "cron-architect",
+        "name": "AI Cron & Workflow Scheduler",
+        "category": "Developer",
+        "iconClass": "icon-dev",
+        "icon": '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+        "desc": "Synthesize and debug 5-part and 6-part cron expressions with human-readable schedules and upcoming execution logs.",
+        "status": "coming-soon",
+        "statusLabel": "New Discovery",
+        "popular": False,
+        "features": ["Human Translation", "Next Run Timeline", "Timezone Conversion"],
+        "modalId": "modal-preview"
+    },
+    {
+        "id": "sql-optimizer-pro",
+        "name": "AI SQL Query Tuning & Index Advisor",
+        "category": "Developer",
+        "iconClass": "icon-dev",
+        "icon": '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>',
+        "desc": "Detect table scans, slow subqueries, and missing indexes with automated EXPLAIN ANALYZE refactoring recommendations.",
+        "status": "coming-soon",
+        "statusLabel": "New Discovery",
+        "popular": False,
+        "features": ["Slow Query Fix", "Composite Indexes", "Execution Plan Explainer"],
+        "modalId": "modal-preview"
+    },
+    {
+        "id": "color-contrast-auditor",
+        "name": "AI WCAG Color Palette & Contrast Auditor",
+        "category": "Design",
+        "category": "Developer",
+        "iconClass": "icon-dev",
+        "icon": '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20z"/></svg>',
+        "desc": "Automate WCAG 2.2 AAA color accessibility audits, dark-mode token generation, and contrast ratio remediation.",
+        "status": "coming-soon",
+        "statusLabel": "New Discovery",
+        "popular": False,
+        "features": ["WCAG 2.2 AAA Audit", "Auto-Remediation", "Design Token Export"],
+        "modalId": "modal-preview"
+    },
+    {
+        "id": "seo-schema-architect",
+        "name": "AI Rich Snippet & Schema.org Architect",
+        "category": "SEO",
+        "iconClass": "icon-seo",
+        "icon": '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/></svg>',
+        "desc": "Generate validated JSON-LD structured data for products, articles, FAQs, and local business to claim Google rich snippets.",
+        "status": "coming-soon",
+        "statusLabel": "New Discovery",
+        "popular": False,
+        "features": ["Google Rich Snippets", "JSON-LD Validator", "Knowledge Graph Tagging"],
+        "modalId": "modal-preview"
+    },
+    {
+        "id": "markdown-docs-enhancer",
+        "name": "AI Technical Documentation Architect",
+        "category": "Writing",
+        "iconClass": "icon-writing",
+        "icon": '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>',
+        "desc": "Turn messy engineering notes into crisp developer documentation with API schemas, Mermaid diagrams, and quickstart guides.",
+        "status": "coming-soon",
+        "statusLabel": "New Discovery",
+        "popular": False,
+        "features": ["Mermaid Flowcharts", "API Reference Cards", "Interactive Guides"],
+        "modalId": "modal-preview"
+    },
+    {
+        "id": "pdf-diff-checker",
+        "name": "AI PDF Legal Contract Diff Checker",
+        "category": "PDF",
+        "iconClass": "icon-pdf",
+        "icon": '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg>',
+        "desc": "Highlight subtle alterations, hidden clauses, and indemnification shifts across multi-version PDF agreements.",
+        "status": "coming-soon",
+        "statusLabel": "New Discovery",
+        "popular": False,
+        "features": ["Clause Shift Detection", "Risk Scoring", "Side-by-Side Comparison"],
+        "modalId": "modal-preview"
+    },
+    {
+        "id": "financial-model-builder",
+        "name": "AI SaaS Unit Economics & CAC Planner",
+        "category": "Business",
+        "iconClass": "icon-biz",
+        "icon": '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>',
+        "desc": "Calculate LTV/CAC ratios, payback periods, gross margin burn, and runway forecasts with sensitivity analysis.",
+        "status": "coming-soon",
+        "statusLabel": "New Discovery",
+        "popular": False,
+        "features": ["LTV/CAC Modeling", "Payback Period", "Runway Sensitivity"],
+        "modalId": "modal-preview"
     }
 ]
 
@@ -106,12 +206,10 @@ def save_catalog(data, filepath="data/tools.json"):
     print(f"[+] Saved updated catalog with {len(data['tools'])} tools to {filepath}")
 
 def query_gemini(api_key, existing_ids):
-    """Query Google Gemini API for newly researched tools."""
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
-    
+    """Query Google Gemini API across supported models for newly researched tools."""
     prompt = f"""You are an elite autonomous AI Tools Researcher for ToolNest AI.
-We are looking for 1 to 2 brand-new, trending, highly practical AI or developer utility tools.
-Currently, our catalog already contains these tool IDs: {existing_ids}.
+Research and propose 1 to 2 brand-new, trending, highly practical AI or developer utility tools.
+Currently, our catalog already contains these tool IDs: {existing_ids[:20]}.
 DO NOT repeat any of these IDs or tools.
 
 Target Categories: Writing, Developer, SEO, Business, Image, Video, PDF.
@@ -142,24 +240,33 @@ Ensure the response is ONLY pure JSON with no markdown backticks, no conversatio
         }
     }
 
-    req = urllib.request.Request(
-        url,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json"}
-    )
+    # Try supported models in priority order
+    for model_name in GEMINI_MODELS:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json"}
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=25) as response:
+                result = json.loads(response.read().decode("utf-8"))
+                candidate_text = result["candidates"][0]["content"]["parts"][0]["text"].strip()
+                # Clean markdown formatting if present
+                candidate_text = re.sub(r"^```json\s*", "", candidate_text)
+                candidate_text = re.sub(r"^```\s*", "", candidate_text)
+                candidate_text = re.sub(r"\s*```$", "", candidate_text)
+                parsed = json.loads(candidate_text)
+                if isinstance(parsed, list) and len(parsed) > 0:
+                    print(f"[+] Successfully researched tools via model: {model_name}")
+                    return parsed
+        except urllib.error.HTTPError as e:
+            err_body = e.read().decode("utf-8", errors="ignore")[:100]
+            print(f"[!] Model {model_name} returned HTTP {e.code}: {err_body}")
+        except Exception as e:
+            print(f"[!] Model {model_name} query error: {e}")
 
-    try:
-        with urllib.request.urlopen(req, timeout=25) as response:
-            result = json.loads(response.read().decode("utf-8"))
-            candidate_text = result["candidates"][0]["content"]["parts"][0]["text"].strip()
-            # Clean markdown formatting if present
-            candidate_text = re.sub(r"^```json\s*", "", candidate_text)
-            candidate_text = re.sub(r"^```\s*", "", candidate_text)
-            candidate_text = re.sub(r"\s*```$", "", candidate_text)
-            return json.loads(candidate_text)
-    except Exception as e:
-        print(f"[!] Gemini API query failed: {e}")
-        return None
+    return None
 
 def verify_tool(tool, existing_ids, existing_names):
     """
@@ -175,9 +282,20 @@ def verify_tool(tool, existing_ids, existing_names):
         if k not in tool or not tool[k]:
             return False, f"Missing or empty required field '{k}'"
 
-    # Category validation
-    if tool["category"] not in ALLOWED_CATEGORIES:
-        return False, f"Invalid category '{tool['category']}'. Must be one of {ALLOWED_CATEGORIES}"
+    # Category validation (map to standard if needed)
+    cat = tool["category"].strip()
+    if cat not in ALLOWED_CATEGORIES:
+        # Normalize common variations
+        if cat.lower() in ["dev", "code", "coding", "software"]:
+            tool["category"] = "Developer"
+        elif cat.lower() in ["content", "copywriting"]:
+            tool["category"] = "Writing"
+        elif cat.lower() in ["marketing", "finance"]:
+            tool["category"] = "Business"
+        elif cat.lower() in ["audio", "media"]:
+            tool["category"] = "Video"
+        else:
+            return False, f"Invalid category '{cat}'. Must be one of {ALLOWED_CATEGORIES}"
 
     # Name validation
     name = tool["name"].strip()
@@ -188,8 +306,8 @@ def verify_tool(tool, existing_ids, existing_names):
 
     # ID validation
     tool_id = tool["id"].strip().lower()
-    if not re.match(r"^[a-z0-9-]+$", tool_id):
-        return False, f"Tool ID '{tool_id}' must be alphanumeric with hyphens"
+    tool_id = re.sub(r"[^a-z0-9-]", "-", tool_id).strip("-")
+    tool["id"] = tool_id
     if tool_id in existing_ids:
         return False, f"Tool ID '{tool_id}' already exists in catalog"
 
@@ -249,9 +367,10 @@ def main():
 
     # Step 1: Research Candidates
     api_key = os.getenv("GEMINI_API_KEY", "").strip()
+    api_key = api_key.strip("<>").strip()
     candidates = []
 
-    if api_key and not api_key.startswith("<"):
+    if api_key and len(api_key) > 10:
         print("[*] Contacting Google Gemini Research Agent...")
         raw_candidates = query_gemini(api_key, list(existing_ids))
         if raw_candidates and isinstance(raw_candidates, list):

@@ -300,6 +300,24 @@ const TOOLS_DATA = [
     ],
     "modalId": "modal-preview",
     "discoveredAt": "2026-11-19 01:56 AM PKT"
+  },
+  {
+    "id": "cron-architect",
+    "name": "AI Cron & Workflow Scheduler",
+    "category": "Developer",
+    "iconClass": "icon-dev",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>",
+    "desc": "Synthesize and debug 5-part and 6-part cron expressions with human-readable schedules and upcoming execution logs.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "Human Translation",
+      "Next Run Timeline",
+      "Timezone Conversion"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-22 04:32 PM PKT"
   }
 ];
 
