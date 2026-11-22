@@ -1,9 +1,9 @@
 {
   "version": "2.4.0",
-  "lastUpdated": "2026-11-22T16:44:17.723514+05:00",
+  "lastUpdated": "2026-11-22T17:05:11.595075+05:00",
   "timezone": "Asia/Karachi (PKT)",
   "schedule": "09:00 PKT & 18:00 PKT Daily",
-  "totalTools": 20,
+  "totalTools": 22,
   "tools": [
     {
       "id": "summarizer",
@@ -352,6 +352,42 @@
       ],
       "modalId": "modal-preview",
       "discoveredAt": "2026-11-22 04:44 PM PKT"
+    },
+    {
+      "id": "dependency-graph-architect",
+      "name": "Dependency Graph Architect",
+      "category": "Developer",
+      "iconClass": "icon-dev",
+      "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M18 6l-6 6-6-6M18 18l-6-6-6 6\"/></svg>",
+      "desc": "Automatically visualizes complex project dependency trees and identifies circular references or bloated packages to optimize build performance. It helps developers refactor legacy codebases by mapping internal module relationships.",
+      "status": "coming-soon",
+      "statusLabel": "New Discovery",
+      "popular": false,
+      "features": [
+        "Circular dependency detection",
+        "Bundle size impact analysis",
+        "Interactive tree visualization"
+      ],
+      "modalId": "modal-preview",
+      "discoveredAt": "2026-11-22 05:05 PM PKT"
+    },
+    {
+      "id": "accessibility-compliance-auditor",
+      "name": "Accessibility Compliance Auditor",
+      "category": "Writing",
+      "iconClass": "icon-writing",
+      "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M12 8v8M8 12h8\"/></svg>",
+      "desc": "Scans web content and documentation to ensure WCAG 2.1 compliance, suggesting inclusive language and structural improvements for screen readers. It bridges the gap between technical writing and universal accessibility standards.",
+      "status": "coming-soon",
+      "statusLabel": "New Discovery",
+      "popular": false,
+      "features": [
+        "WCAG 2.1 automated scoring",
+        "Alt-text generation suggestions",
+        "Inclusive language rephrasing"
+      ],
+      "modalId": "modal-preview",
+      "discoveredAt": "2026-11-22 05:05 PM PKT"
     }
   ]
 }
