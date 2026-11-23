@@ -426,6 +426,24 @@ const TOOLS_DATA = [
     ],
     "modalId": "modal-preview",
     "discoveredAt": "2026-11-23 01:01 AM PKT"
+  },
+  {
+    "id": "sql-optimizer-pro",
+    "name": "AI SQL Query Tuning & Index Advisor",
+    "category": "Developer",
+    "iconClass": "icon-dev",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"/><path d=\"M21 12c0 1.66-4 3-9 3s-9-1.34-9-3\"/><path d=\"M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5\"/></svg>",
+    "desc": "Detect table scans, slow subqueries, and missing indexes with automated EXPLAIN ANALYZE refactoring recommendations.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "Slow Query Fix",
+      "Composite Indexes",
+      "Execution Plan Explainer"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-23 06:46 PM PKT"
   }
 ];
 
