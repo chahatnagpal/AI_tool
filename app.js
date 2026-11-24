@@ -444,6 +444,24 @@ const TOOLS_DATA = [
     ],
     "modalId": "modal-preview",
     "discoveredAt": "2026-11-23 06:46 PM PKT"
+  },
+  {
+    "id": "color-contrast-auditor",
+    "name": "AI WCAG Color Palette & Contrast Auditor",
+    "category": "Developer",
+    "iconClass": "icon-dev",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 2a10 10 0 0 1 0 20z\"/></svg>",
+    "desc": "Automate WCAG 2.2 AAA color accessibility audits, dark-mode token generation, and contrast ratio remediation.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "WCAG 2.2 AAA Audit",
+      "Auto-Remediation",
+      "Design Token Export"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-24 07:22 PM PKT"
   }
 ];
 
