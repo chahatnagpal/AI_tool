@@ -462,6 +462,42 @@ const TOOLS_DATA = [
     ],
     "modalId": "modal-preview",
     "discoveredAt": "2026-11-24 07:22 PM PKT"
+  },
+  {
+    "id": "dockerfile-optimizer",
+    "name": "Dockerfile Optimizer",
+    "category": "Developer",
+    "iconClass": "icon-dev",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 4h16v16H4z\"/><path d=\"M8 8h8v8H8z\"/></svg>",
+    "desc": "Analyzes existing Dockerfiles to suggest multi-stage builds, layer caching improvements, and image size reduction strategies. It ensures your container deployments are lean, secure, and production-ready.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "Layer bloat analysis",
+      "Multi-stage build conversion",
+      "Security vulnerability scanning"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-25 06:40 PM PKT"
+  },
+  {
+    "id": "schema-markup-architect",
+    "name": "Schema Markup Architect",
+    "category": "SEO",
+    "iconClass": "icon-seo",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\"/></svg>",
+    "desc": "Generates complex JSON-LD structured data for websites to improve search engine visibility and rich snippet performance. Automatically maps your page content to the correct schema.org vocabulary.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "Rich snippet preview",
+      "JSON-LD code generation",
+      "Schema validation"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-25 06:40 PM PKT"
   }
 ];
 
