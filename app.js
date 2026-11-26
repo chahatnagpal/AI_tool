@@ -498,6 +498,24 @@ const TOOLS_DATA = [
     ],
     "modalId": "modal-preview",
     "discoveredAt": "2026-11-25 06:40 PM PKT"
+  },
+  {
+    "id": "environment-variable-manager",
+    "name": "EnvVar Architect",
+    "category": "Developer",
+    "iconClass": "icon-dev",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\"/></svg>",
+    "desc": "Automatically generates, validates, and synchronizes environment variable templates across local, staging, and production environments to prevent configuration drift.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "Auto-generate .env.example files",
+      "Secret masking detection",
+      "Cross-environment parity audit"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-26 06:18 PM PKT"
   }
 ];
 
