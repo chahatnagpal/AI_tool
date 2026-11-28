@@ -534,6 +534,24 @@ const TOOLS_DATA = [
     ],
     "modalId": "modal-preview",
     "discoveredAt": "2026-11-27 06:15 PM PKT"
+  },
+  {
+    "id": "video-metadata-scrubber",
+    "name": "Video Metadata Scrubber",
+    "category": "Video",
+    "iconClass": "icon-video",
+    "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"2.18\"/><line x1=\"7\" y1=\"2\" x2=\"7\" y2=\"22\"/></svg>",
+    "desc": "A privacy-focused utility that strips sensitive EXIF, geolocation, and device-specific metadata from video files before distribution. Ensures your media assets are clean and secure for public sharing.",
+    "status": "coming-soon",
+    "statusLabel": "New Discovery",
+    "popular": false,
+    "features": [
+      "Batch Metadata Stripping",
+      "Geolocation Removal",
+      "Privacy-First Processing"
+    ],
+    "modalId": "modal-preview",
+    "discoveredAt": "2026-11-28 05:31 PM PKT"
   }
 ];
 
